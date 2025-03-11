@@ -1,0 +1,29 @@
+button{
+    color : white;
+    background-color: red;
+    border-radius: 6px;
+    margin: 10px;
+    padding : 7px 20px;
+    border : none;
+    font-weight: 900;
+    transition: color 0.2s ease;
+}
+
+.button-small{
+    width : 100px;
+}
+
+.button-medium{
+    width : 150px;
+}
+
+.button-large{
+    width : 165px;
+    height: 40px;
+}
+
+.active{
+    color : red;
+    background-color: white;
+    border: 1px solid gray;
+}

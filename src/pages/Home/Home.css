@@ -1,0 +1,43 @@
+.f-slide{
+    background: linear-gradient(to bottom, #ff6347,  white,white);
+    width : 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.s-slide{
+    background: linear-gradient(to bottom,white, #ff6347);
+    width : 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top : 20%;
+    left : 10%;
+    gap : 10px;
+    width : 80%;
+    align-items: center;
+}
+.intro .content{
+    width : 350px;
+
+}
+.intro .content h1{
+    font-size: 45px;
+
+}
+
+.burgar1-img{
+    width : 450px;
+    height: 450px;
+    padding-right: 10px;
+}

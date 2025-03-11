@@ -1,0 +1,76 @@
+/* Navbar Container */
+.navbar {
+    position: fixed;
+    top : 0;
+    left : 0;
+    right: 5px;
+    width : 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    color: #000;
+    margin: auto;
+    border-radius: 2px;
+    z-index: 10;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+    
+  /* Navigation Links */
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .navbar-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+  
+  .navbar-link:hover {
+    color: white; /* Highlight color on hover */
+  }
+  
+  /* Cart Icon */
+  .navbar-cart .navbar-link {
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  .navbar-link::after{
+    content: "";
+    background-color: white;
+    width : 0%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    transition:width 0.4s ease;
+  }
+  .navbar-link:hover::after{
+    width: 100%;
+    
+  }
+
+  /* Image logo */
+  .logo-img{
+    width : 80px;
+    height: 70px;
+    margin : 0 10px 
+  }
+  
