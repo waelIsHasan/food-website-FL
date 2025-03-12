@@ -1,0 +1,34 @@
+.footer{
+    width : 100%;
+    padding : 10px;
+    height: 35vh;
+    background-color: rgb(46, 44, 44);
+    display:  flex;
+    justify-content: space-around;
+    color : white
+}
+.sup-logo {
+    width : 300px;
+}
+.sup-logo  .icons{
+    display: flex;
+    justify-content: space-evenly;
+    gap : 5px
+}
+h1{
+    color : #fc0a02
+}
+.sup-logo  .logo{
+    width : 100px;
+    height: 100px;
+    margin: 0;
+}
+ul{
+    list-style: none;
+    line-height: 30px;
+}
+
+a{
+    text-decoration: none;
+    color : white
+}

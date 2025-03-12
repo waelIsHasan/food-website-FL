@@ -1,0 +1,41 @@
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contact-us h1{
+    font-size: xxx-large;
+}
+
+h5{
+    font-size: medium;
+    width : 800px;
+    margin :  auto;
+}
+.img-form{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+.img-contact{
+    width: 450px;
+}
+form{
+    display: flex;
+    gap : 20px;
+    flex-direction: column;
+    margin-top: 90px;
+    width : 40%
+}
+textarea{
+    width : 95%;
+    height:  80px;;
+}
+form input{
+    width : 95%;
+    height: 30px;
+
+}

@@ -1,49 +1,55 @@
 import React from "react";
 import "./Navbar.css"; // Import styles
-import logo from './logo.png'
+import logo from "./logo.png";
 import Button from "../Button";
+import { Link } from "react-router-dom";
 // Function Declaration
 export default function Navbar() {
   return (
     <nav className="navbar glass-card">
       {/* Logo or Brand Name */}
       <div className="navbar-brand">
-      <img  className="logo-img" src={logo} alt="" />
+        <img className="logo-img" src={logo} alt="" />
       </div>
       {/* Navigation Links */}
       <ul className="navbar-links">
         <li>
-          <a to="#" className="navbar-link">
+          <Link to="" className="navbar-link">
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a to="/menu" className="navbar-link">
+          <Link to="/menu" className="navbar-link">
             Menu
-          </a>
+          </Link>
         </li>
         <li>
-          <a to="/about" className="navbar-link">
+          <Link to="/aboutus" className="navbar-link">
             About Us
-          </a>
+          </Link>
         </li>
         <li>
-          <a to="/order" className="navbar-link">
+          <Link to="/reservation" className="navbar-link">
+            Reservation
+          </Link>
+        </li>
+        <li>
+          <Link to="/order" className="navbar-link">
             Order Online
-          </a>
+          </Link>
         </li>
         <li>
-          <a to="/contact" className="navbar-link">
+          <Link to="/contactus" className="navbar-link">
             Contact Us
-          </a>
+          </Link>
         </li>
       </ul>
       {/* Cart Icon */}
       <div className="navbar-cart">
-        <a to="/cart" className="navbar-link">
+        <Link to="/cart" className="navbar-link">
           🛒 {/* Cart Icon */}
-        </a>
-        <Button name="login"  width='small'/>
+        </Link>
+        <Button name="login" width="small" />
       </div>
     </nav>
   );

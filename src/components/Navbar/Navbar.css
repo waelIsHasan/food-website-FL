@@ -41,7 +41,7 @@
     position: relative;
   }
   
-  .navbar-link:hover {
+  .navbar .navbar-link:hover {
     color: white; /* Highlight color on hover */
   }
   
