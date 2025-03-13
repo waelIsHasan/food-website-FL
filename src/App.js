@@ -6,6 +6,7 @@ import Menu from "./pages/Menu";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Contact from "./pages/Contact/Contact";
+import Reservation from "./pages/Reservation/Reservation";
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
           <Route path="/aboutus" element={<Menu />} />
           <Route path="/contactus" element={<Contact />} />
           <Route path="/order" element={<Menu />} />
+          <Route path='/reservation' element ={<Reservation />} />
         </Routes>
         <Footer />
       </BrowserRouter>

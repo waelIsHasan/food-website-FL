@@ -39,10 +39,11 @@
     font-size: 1rem;
     transition: color 0.3s ease;
     position: relative;
+    font-weight: bold;
   }
   
   .navbar .navbar-link:hover {
-    color: white; /* Highlight color on hover */
+    color: red; /* Highlight color on hover */
   }
   
   /* Cart Icon */
@@ -53,7 +54,7 @@
   }
   .navbar-link::after{
     content: "";
-    background-color: white;
+    background-color: red;
     width : 0%;
     height: 1px;
     position: absolute;

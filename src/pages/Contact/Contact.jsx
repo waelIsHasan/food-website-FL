@@ -37,13 +37,15 @@ export default function Contact(){
                     <img className="img-contact" src={contactImg} alt="" />
                     <form action="" onSubmit={(e)=>{
                             e.preventDefault()
+                            alert(`Submit Successfully \n The Customer Name : ${contactForm.firstName} ${contactForm.lastName} \n email : ${contactForm.email} \n Subject : ${contactForm.subject} `)
+                            setContactForm(initState)
                             
-                    }}>
-                            <input type="text" placeholder='First Name' onChange={firstNameChangeHandle}/>
-                            <input type="text" placeholder='Last Name' onChange={lastNamechangeHandle}/>
-                            <input type="email" placeholder='Email' onChange={emailChangeHandle}/>
-                            <input type="text" placeholder='Subject' onChange={subjectChangeHandle}/>
-                            <textarea name="" id="" placeholder='Message...' onChange={messageChangeHandle}></textarea>
+                  }}>
+                            <input value={contactForm.firstName} type="text" placeholder='First Name' onChange={firstNameChangeHandle}/>
+                            <input value={contactForm.lastName} type="text" placeholder='Last Name' onChange={lastNamechangeHandle}/>
+                            <input value={contactForm.email} type="email" placeholder='Email' onChange={emailChangeHandle}/>
+                            <input value={contactForm.subject} type="text" placeholder='Subject' onChange={subjectChangeHandle}/>
+                            <textarea value={contactForm.message} name="" id="" placeholder='Message...' onChange={messageChangeHandle}></textarea>
                            
                            <div><Button width={"large"} name="Submit"></Button></div> 
                     </form>

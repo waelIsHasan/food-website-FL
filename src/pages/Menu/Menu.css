@@ -1,26 +1,29 @@
-.menu{
+.menu {
     width: 100%;
     flex-direction: column;
     display: flex;
-    gap : 5px;
+    gap: 5px;
 }
-.menu-margin{
+
+.menu-margin {
     margin-top: 100px;
 }
-.cards{
-    margin : 40px auto;
-    gap : 20px;
+
+.cards {
+    margin: 40px auto;
+    gap: 20px;
     display: grid;
-    grid-template-rows: repeat(2 , 1fr);
-    grid-template-columns: repeat(3, 1fr);
-}
-.cards-chef{
-    gap : 40px;
-    grid-template-rows: repeat(1 , 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
 }
 
-.chefs{
+.cards-chef {
+    gap: 40px;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.chefs {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,41 +31,55 @@
 
 }
 
-.customer-say{
-    width : 30%;
-    margin: auto ;
-    background-color:white;
+.customer-say {
+    width: 40%;
+    margin: auto;
+    background: linear-gradient(45deg , #ff6347,  white);
     border-radius: 20px;
     box-shadow: 0 1px 2px grey;
-    position: relative;
+
 }
 
-.customer-say .customer-info img{
-    border-radius: 50%;
-    object-fit: cover;
-    width : 75px;
-    height: 75px;
+.customer-say p::before {
+    content: "``";
+    width: 40px;
+    height: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
 }
-.customer-say p::before{
-content: "``";
-width: 40px;
-height: 20px;
-color: black;
-font-weight: bold;
-font-size: 30px;
-}
-.customer-say p::after{
-content: "``";
-width: 40px;
-height: 20px;
-color: black;
-font-weight: bold;
-font-size: 30px;
+
+.customer-say p::after {
+    content: "``";
+    width: 40px;
+    height: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 .customer-info {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+}
+
+.customer-say img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.name-job {
+    width: 200px;
+    height: 30px;
+    flex-direction: column;
+    display: flex;
+    line-height: 0;
+}
+
+h3,
+h4 {
+    margin: 10px;
 }

@@ -12,11 +12,11 @@ import cus1 from "./1.avif";
 import "./Menu.css";
 import Footer from "../../components/Footer/Footer";
 export default function Menu({ fromHome = false }) {
-  let className = 'menu';
-  if(!fromHome){
-    className += " menu-margin"
+  let className = "menu";
+  if (!fromHome) {
+    className += " menu-margin";
   }
-  
+
   return (
     <div className={className}>
       <h1>Our Popular Menu</h1>
@@ -36,7 +36,7 @@ export default function Menu({ fromHome = false }) {
         <Card img={img2} name={"Spaghetti"} price="120 $" />
       </div>
       {fromHome && <ChefMenu />}
-      {fromHome &&<CustomerSay />}
+      {fromHome && <CustomerSay />}
       {fromHome && <Hungary />}
     </div>
   );
@@ -64,16 +64,15 @@ function CustomerSay() {
       <h1>What Our Customer Say</h1>
       <div className="customer-say">
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
-          consectetur eligendi, laboriosam earum praesentium velit voluptates
-          distinctio assumenda consequuntur est obcaecati dignissimos, magnam,
-          fugiat ratione expedita? A omnis temporibus voluptate!
+          ur eligendi, laboriosam earum praesentium velit voluptates distinctio
+          assumenda consequuntur est obcaecati dignissimos, magnam, fugiat
+          ratione expedita? A omnis temporibus voluptate!
         </p>
         <div className="customer-info">
           <img src={cus1} alt="" />
           <div className="name-job">
             <h3>Wael hasan</h3>
-            <h5>Software Engineer</h5>
+            <h4>Software Engineer</h4>
           </div>
         </div>
       </div>

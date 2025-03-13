@@ -1,0 +1,44 @@
+/* Custom CSS */
+.reservation{
+    width : 100%;
+    margin-top: 80px ;
+    display: flex;
+    justify-content: space-around;
+
+}
+.reservation img{
+    width : 46%;
+    border-radius: 20px;
+    margin: 20px 70px;
+
+
+}
+.react-datepicker-wrapper {
+    width: 100%;
+  }
+  
+ 
+  .book-table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    padding : 10px;
+    width : 50%;
+  }
+
+  form{
+    margin-top: 10px;
+    width : 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  form input{
+    width : 60%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color : white;
+    margin-bottom: 0;
+    padding : 10px;
+  }
