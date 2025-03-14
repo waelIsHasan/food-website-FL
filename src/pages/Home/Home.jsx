@@ -1,4 +1,4 @@
-import Navbar from "C:/Users/Dell/Desktop/Reacts/Projects/d-restaurant-website/src/components/Navbar/Navbar";
+import Navbar from '../../components/Navbar/Navbar';
 import "./Home.css";
 import Button from "../../components/Button";
 import burgar1 from "./burgar1.png";
