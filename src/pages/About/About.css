@@ -1,0 +1,72 @@
+.about-us{
+  background: linear-gradient(65deg , #ff4332 , white);
+}
+
+.slide{
+    padding: 70px 10px;
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+    align-items: center;
+
+}
+.bg-1{
+    width : 400px;
+    height: 400px;
+    border-radius: 500px;
+    background-color: rgba(204, 202, 202, 0.493);
+    display: flex;
+    justify-content: center;
+    position: relative; 
+    margin: 20px;
+}
+
+.bg-2{
+    width : 300px;
+    height: 300px;
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(163, 162, 162, 0.267);
+    box-shadow: 1px 1px 10px grey;
+    position: absolute;
+    top : 10%
+}
+.bg-2 img{
+    width : 60%;
+    height: 60%;
+    border-radius: 100px;
+    box-shadow: 1px 1px 10px grey;
+
+    position: absolute;
+    top : 20%;
+}
+
+.info{
+    width : 30%;
+}
+p{
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.ceo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    padding: 30px;
+}
+.ceo .about-img{
+    width : 50%;
+    height: 90%;
+    margin-left: 20px;
+}
+
+.ceo .about-contect-ceo{
+    width : 40%;
+}
+
+strong{
+    color : black
+}

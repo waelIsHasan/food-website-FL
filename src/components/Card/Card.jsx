@@ -6,7 +6,7 @@ export default function Card({
   img,
   isChef = false,
   chefName,
-  isContent,
+  isContent = false,
   children,
 }) {
   if (isContent)

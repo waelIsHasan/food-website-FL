@@ -25,7 +25,7 @@ export default function Reservation(){
             <img src={res1} alt="" />
             <div className='book-table'>
                 <h1>Book a Table</h1>
-                <form action="" onSubmit={Submit}>
+                <form className="form-reservation" action="" onSubmit={Submit}>
                     <input value={reservation.date} type='date' placeholder='Date' onChange={dateChangeHandle}/>
                     <input value={reservation.time} type='time' placeholder='Time' onChange={timeChangeHandle}/>
                     <input value={reservation.partySize} type='number' placeholder='Party Size' onChange={partySizeChangeHandle}/>

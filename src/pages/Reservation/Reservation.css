@@ -27,14 +27,15 @@
     width : 50%;
   }
 
-  form{
+  .form-reservation{
     margin-top: 10px;
     width : 100%;
     display: flex;
+    gap : 10px;
     flex-direction: column;
     align-items: baseline;
   }
-  form input{
+  .form-reservation input{
     width : 60%;
     border: 1px solid #ccc;
     border-radius: 4px;

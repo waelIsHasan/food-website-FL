@@ -35,7 +35,7 @@ export default function Contact(){
                 <h5>We love hearing from our customers , feel free to share your expierence or ask any questions you may have.</h5>
                 <div className='img-form'>
                     <img className="img-contact" src={contactImg} alt="" />
-                    <form action="" onSubmit={(e)=>{
+                    <form class="form-contact"action="" onSubmit={(e)=>{
                             e.preventDefault()
                             alert(`Submit Successfully \n The Customer Name : ${contactForm.firstName} ${contactForm.lastName} \n email : ${contactForm.email} \n Subject : ${contactForm.subject} `)
                             setContactForm(initState)

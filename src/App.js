@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Contact from "./pages/Contact/Contact";
 import Reservation from "./pages/Reservation/Reservation";
+import About from "./pages/About/About";
 function App() {
   return (
     <div className="App">
@@ -15,7 +16,7 @@ function App() {
         <Routes>
           <Route index element={<Home />}/>
           <Route path="/menu" element={<Menu />} />
-          <Route path="/aboutus" element={<Menu />} />
+          <Route path="/aboutus" element={<About />} />
           <Route path="/contactus" element={<Contact />} />
           <Route path="/order" element={<Menu />} />
           <Route path='/reservation' element ={<Reservation />} />

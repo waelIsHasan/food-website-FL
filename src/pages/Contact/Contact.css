@@ -16,25 +16,28 @@ h5{
 }
 .img-form{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-align: center;
+
 
 }
 .img-contact{
-    width: 450px;
+    width: 500px;
+    margin: auto;
+
 }
-form{
+.form-contact{
     display: flex;
     gap : 20px;
     flex-direction: column;
-    margin-top: 90px;
-    width : 40%
+    width : 40%;
+    padding : 100px 40px 0 0  
 }
 textarea{
-    width : 95%;
-    height:  80px;;
+    width : 50%;
+    height:  80px;
 }
-form input{
+.form-contact input{
     width : 95%;
     height: 30px;
 
