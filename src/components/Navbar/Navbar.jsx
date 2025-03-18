@@ -2,9 +2,15 @@ import React from "react";
 import "./Navbar.css"; // Import styles
 import logo from "./logo.png";
 import Button from "../Button";
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, useNavigate } from 'react-router-dom';
+
 // Function Declaration
 export default function Navbar() {
+  const navigate = useNavigate()
+  function hanleLoginClick(){
+    navigate('./login')
+  }
   return (
     <nav className="navbar glass-card">
       {/* Logo or Brand Name */}
@@ -49,7 +55,7 @@ export default function Navbar() {
         <Link to="/cart" className="navbar-link">
           🛒 {/* Cart Icon */}
         </Link>
-        <Button name="login" width="small" />
+        <Button onClick={hanleLoginClick} name="login" width="small" />
       </div>
     </nav>
   );

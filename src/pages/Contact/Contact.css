@@ -40,5 +40,23 @@ textarea{
 .form-contact input{
     width : 95%;
     height: 30px;
+}
 
+.contact-submission{
+    width : 60%;
+    background-color: white;
+    border-radius: 20px;
+    position: fixed;
+    top : 30%;
+    left : 20%
+}
+
+.contact-submission img{
+    width : 400px
+}
+
+.contact-submission h3{
+    color : red;
+    font-weight: bold;
+    font-style: italic;
 }

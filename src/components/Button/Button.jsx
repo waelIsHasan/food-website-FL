@@ -1,12 +1,12 @@
 import './Button.css'
-export default function Button({name , width  , isActive=false}){
+export default function Button({name , width  , isActive=false , onClick}){
     let className = `button-${width}`;
     if(isActive){
         className+=" active";
     }
     return(
         <>
-            <button  className={className} type="submit" onSubmit={(e)=>{e.preventDefault()}}>
+            <button  onClick={onClick} className={className}  >
                 {name}
             </button>
         </>

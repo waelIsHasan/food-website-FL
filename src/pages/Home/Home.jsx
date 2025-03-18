@@ -6,6 +6,7 @@ import steak from "./steak.png";
 import Menu from "../Menu";
 import Card from "../../components/Card";
 import Footer from "../../components/Footer/Footer";
+import ReservationConfirmation from '../Reservation/ConfirmReservation';
 export default function Home() {
   const slides = [
     {
