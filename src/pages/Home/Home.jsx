@@ -1,4 +1,4 @@
-import Navbar from '../../components/Navbar/Navbar';
+import Navbar from "../../components/Navbar/Navbar";
 import "./Home.css";
 import Button from "../../components/Button";
 import burgar1 from "./burgar1.png";
@@ -6,7 +6,8 @@ import steak from "./steak.png";
 import Menu from "../Menu";
 import Card from "../../components/Card";
 import Footer from "../../components/Footer/Footer";
-import ReservationConfirmation from '../Reservation/ConfirmReservation';
+import ReservationConfirmation from "../Reservation/ConfirmReservation";
+import { useNavigate } from "react-router-dom";
 export default function Home() {
   const slides = [
     {
@@ -43,20 +44,29 @@ export default function Home() {
           isLR={false}
         />
       </div>
-      <Menu fromHome={true}/>
+      <Menu fromHome={true} />
     </>
   );
 }
 
 function Slide({ heading, parg, nb1, nb2, isLR = true }) {
+  const navigate = useNavigate();
+  function handleOrderClick() {
+    navigate("/order");
+  }
+
+  function handleReservationClick() {
+    navigate("/reservation");
+  }
+
   if (isLR)
     return (
       <div className="intro">
         <div className="content">
           <h1>{heading}</h1>
           <p>{parg}</p>
-          <Button name={nb1} width="medium" />
-          <Button name={nb2} width="medium" />
+          <Button onClick={handleOrderClick} name={nb1} width="medium" />
+          <Button onClick={handleReservationClick} name={nb2} width="medium" />
         </div>
         <img className="burgar1-img" src={burgar1} alt="" />
       </div>
@@ -67,8 +77,8 @@ function Slide({ heading, parg, nb1, nb2, isLR = true }) {
       <div className="content">
         <h1>{heading}</h1>
         <p>{parg}</p>
-        <Button name={nb1} width="medium" />
-        <Button name={nb2} width="medium" />
+        <Button onClick={handleOrderClick} name={nb1} width="medium" />
+        <Button onClick={handleReservationClick} name={nb2} width="medium" />
       </div>
     </div>
   );

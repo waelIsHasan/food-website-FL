@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Home from "./pages/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -9,6 +8,7 @@ import Contact from "./pages/Contact/Contact";
 import Reservation from "./pages/Reservation/Reservation";
 import About from "./pages/About/About";
 import Login from "./pages/Login/Login";
+import Checkout from "./pages/Checkout/Checkout";
 function App() {
   return (
     <div className="App">
@@ -22,6 +22,8 @@ function App() {
           <Route path="/order" element={<Menu />} />
           <Route path='/reservation' element ={<Reservation />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/checkout' element={<Checkout />} />
+
         </Routes>
         <Footer />
       </BrowserRouter>

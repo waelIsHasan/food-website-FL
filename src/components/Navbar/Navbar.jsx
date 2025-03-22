@@ -49,6 +49,11 @@ export default function Navbar() {
             Contact Us
           </Link>
         </li>
+        <li>
+          <Link to="/checkout" className="navbar-link">
+            Checkout
+          </Link>
+        </li>
       </ul>
       {/* Cart Icon */}
       <div className="navbar-cart">

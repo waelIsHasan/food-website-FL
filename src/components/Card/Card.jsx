@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import Button from "../Button";
 import "./Card.css";
 export default function Card({
@@ -9,6 +10,10 @@ export default function Card({
   isContent = false,
   children,
 }) {
+  const navigate = useNavigate();
+  function handleOrderClick(){
+    navigate('/order')
+  }
   if (isContent)
     return (
       <>
@@ -34,7 +39,7 @@ export default function Card({
         </div>
         <div className="card-footer">
           <h4>{price}</h4>
-          <Button name="Order" width="small" />
+          <Button onClick={handleOrderClick} name="Order" width="small" />
         </div>
       </div>
     );

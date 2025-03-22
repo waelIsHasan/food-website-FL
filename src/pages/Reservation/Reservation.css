@@ -4,15 +4,12 @@
   margin-top: 80px;
   display: flex;
   justify-content: space-around;
-
 }
 
 .reservation img {
   width: 46%;
   border-radius: 20px;
   margin: 20px 70px;
-
-
 }
 
 .react-datepicker-wrapper {
