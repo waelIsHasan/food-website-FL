@@ -8,14 +8,73 @@ import chef1 from "./chef1.jpg";
 import chef2 from "./chef2.jpg";
 import chef3 from "./chef3.jpg";
 import cus1 from "./1.avif";
-
+import { Link } from "react-router-dom";
 import "./Menu.css";
-import Footer from "../../components/Footer/Footer";
+
+export const mealsData = [
+  {
+    id: 1,
+    name: "Spaghetti",
+    price: "120 $",
+    img: img1,
+    description : "this is a nice dish and very delcious to take this is a nice dish and very delcious to take "
+  },
+  {
+    id: 2,
+    name: "Spaghetti",
+    price: "120 $",
+    img: img2,
+    description : "this is a nice dish and very delcious to take this is a nice dish and very delcious to take "
+
+  },
+  {
+    id: 3,
+    name: "Spaghetti",
+    price: "120 $",
+    img: img3,
+    description : "this is a nice dish and very delcious to take this is a nice dish and very delcious to take "
+
+  },
+  {
+    id: 4,
+    name: "Spaghetti",
+    price: "120 $",
+    img: img5,
+    description : "this is a nice dish and very delcious to take this is a nice dish and very delcious to take "
+
+  },
+  {
+    id: 5,
+    name: "Spaghetti",
+    price: "120 $",
+    img: img2,
+    description : "this is a nice dish and very delcious to take this is a nice dish and very delcious to take "
+
+  },
+  {
+    id: 6,
+    name: "Spaghetti",
+    price: "120 $",
+    img: img3,
+    description : "this is a nice dish and very delcious to take this is a nice dish and very delcious to take "
+  },
+];
+
 export default function Menu({ fromHome = false }) {
   let className = "menu";
+  let path = '';
   if (!fromHome) {
     className += " menu-margin";
-  }
+}
+  
+
+  const mealCards = mealsData.map((meal)=>{
+    return (
+      <Link key={meal.id} to={`/detail-meal/${meal.id}`}>
+        <Card  description={meal.description} img={meal.img} name={meal.name} price={meal.price} />
+      </Link>
+    );
+  });
 
   return (
     <div className={className}>
@@ -28,12 +87,7 @@ export default function Menu({ fromHome = false }) {
         <Button name="Drink" width="large" />
       </div>
       <div class="cards">
-        <Card img={img1} name={"Spaghetti"} price="120 $" />
-        <Card img={img2} name={"Spaghetti"} price="120 $" />
-        <Card img={img3} name={"Spaghetti"} price="120 $" />
-        <Card img={img5} name={"Spaghetti"} price="120 $" />
-        <Card img={img1} name={"Spaghetti"} price="120 $" />
-        <Card img={img2} name={"Spaghetti"} price="120 $" />
+        {mealCards}
       </div>
       {fromHome && <ChefMenu />}
       {fromHome && <CustomerSay />}

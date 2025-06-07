@@ -9,6 +9,7 @@ export default function Card({
   chefName,
   isContent = false,
   children,
+  description
 }) {
   const navigate = useNavigate();
   function handleOrderClick(){
@@ -25,12 +26,11 @@ export default function Card({
     return (
       <div className="card">
         <img src={img} alt="" />
-        <h1>{name}</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque neque
-          voluptate error quas distinctio,
+        <h1 >{name}</h1>
+        <p className="description-parg">
+        {description}
         </p>
-        <div className="stars">
+        <div className="stars description-parg">
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
@@ -38,12 +38,11 @@ export default function Card({
           <i class="fa-solid fa-star"></i>
         </div>
         <div className="card-footer">
-          <h4>{price}</h4>
+          <h4 className="description-parg">{price}</h4>
           <Button onClick={handleOrderClick} name="Order" width="small" />
         </div>
       </div>
     );
-
   return (
     <div className="card-chef" name={chefName}>
       <img src={img} className="card-img" alt="" />
